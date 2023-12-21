@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="sidebar">
+
+            <div class="label" id="labelMenu">Menu</div>
+
+            <button class="sidebar-button" onclick="tampilkanHalaman('beranda.html')"><img src="img/sidebar-menu/beranda.svg"> Beranda</button>
+            <button class="sidebar-button" onclick="tampilkanHalaman('tp.html')"><img src="img/sidebar-menu/tp.svg">TP</button>
+            <button class="sidebar-button" onclick="tampilkanHalaman('materi.html')"><img src="img/sidebar-menu/materi.svg"> Materi</button>
+            <button class="sidebar-button" onclick="tampilkanHalaman('rangkuman.html')"><img src="img/sidebar-menu/rangkuman.svg"> Rangkuman</button>
+            <button class="sidebar-button" onclick="tampilkanHalaman('evaluasi.html')"><img src="img/sidebar-menu/evaluasi.svg"> Evaluasi</button>
+
+        </div>
+
+        <div class="content" id="content">
+        </div>
+
+        <div id="group-nav-arrow">
+            <img src="img/materi/arrow-left.png" id="arrow-left" onclick="tampilkanMateriSebelumnya()">
+            <img src="img/materi/arrow-right.png" id="arrow-right" onclick="tampilkanMateriSelanjutnya()">
+        </div>
+    </div>
+    
+
+    <script src="materi.js"></script>
+</body>
+</html>

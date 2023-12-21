@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Orelega+One&family=Roboto&display=swap');
+
+/* Style Main */
+* {
+    color: #000;
+    font-family: 'Orelega One', 'Arial', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FBF5E5;
+}
+
+
+.container{
+    display: flexbox;
+    height: 100%;
+}
+
+.sidebar{
+    width: 180px;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+
+    border-right: 1px solid #000;
+
+    background: #fff;
+    z-index: 2;
+}
+
+.sidebar-button{
+    
+    display: flex;
+
+    border: none;
+    background: none;
+    color: #000;
+    
+    width: 150px;
+    height: 48px;
+    
+    cursor: pointer;
+    user-select: none;
+
+    font-size: medium;
+    text-align: left;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    
+}
+
+.sidebar img {
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+.sidebar-button:hover, .sidebar-button:focus, .sidebar-button:active{
+    border-radius: 4rem;
+    background: #E5E5E5;
+    border: 1px solid #000;
+}
+
+#labelMenu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    margin-left: 180px;
+}
+/* Akhir dari Style Main */
+
+/* Style Beranda */
+#groupTitleBeranda {
+    display: flexbox;
+    font-size: 1.5rem;
+}
+
+#groupSubTitleBeranda{
+    font-family: 'Inter';
+    font-size: 1rem;
+    text-align: end;
+}
+
+#img-beranda-1{
+    display: flexbox;
+    width: 400px;
+    position: fixed;
+    left: 150px;
+    bottom: 0;
+    z-index: 1;
+}
+
+#groupTeam{
+    display: flexbox;
+    text-align: center;
+
+    width: 230px;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    border-left: 1px solid #000;
+    background: #fff;
+}
+
+.container-team-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.container-team-name img {
+    width: 55px;
+    height: 55px;
+}
+
+.container-team-name h3 {
+    margin-left: 8px;
+}
+
+.container-student{
+    display: flex;
+    align-items: center;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    width: 100%;
+}
+
+.container-student img {
+    justify-content: start;
+}
+
+.container-name {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-name p{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.container-name p:last-child{
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+/* Akhir dari Style Beranda */
+
+/* Style TP */
+.tujuan {
+    width: 80%;
+}
+
+.tujuan h2 {
+    
+    font-size: 24px;
+    
+    margin-top: 24px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+    
+}
+
+.tujuan ol {
+
+    display: flex;
+
+    font-family: 'Inter';
+    
+    padding-left: 20px;
+
+    height: 75vh;
+    
+
+    align-items: center;
+    justify-content: center;
+}
+
+.tujuan ol ol {
+
+    
+    display: flexbox;
+    
+    margin-bottom: 10px;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tujuan .circle-group {
+    position: relative;
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.tujuan .circle-group img {
+    display: block;
+    height: auto;
+}
+
+.tujuan .circle-group .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+.tujuan .circle-group .larger-text{
+    font-size: 3rem;
+}
+
+/* Akhir Style TP */
+
+/* Style Materi */
+
+.materi {
+    display: none;
+}
+
+.materi #img2{
+    margin-top: 32px;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAF5;
+    width: 400px;
+    margin: 24px;
+    border-radius: 36px;
+    border: 1px solid rgba(192, 192, 192, 0.486);
+    box-shadow: 0 4px 8px rgba(110, 110, 110, 0.25);
+}
+
+.note-header {
+    font-family: 'Inter';
+    font-weight: 500;
+    display: flex;
+    margin: 50px 0 8px 50px;
+}
+
+.note img {
+    display: flexbox;
+    width: 70%;
+    margin: 10px 0 8px 50px;
+}
+
+.note-content{
+    font-family: 'Inter';
+    display: flex;
+    padding: 24px 50px;
+}
+
+.materi.active{
+    display: block;
+    width: 80%;
+}
+
+.materi h1, .materi h2, .materi h3, .materi h4, .materi h5, .materi h6 {
+    font-family: 'Orelega One';
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.materi p {
+    font-family: 'Inter';
+}
+
+.materi mark{
+    font-family: 'Inter';
+    font-weight: 500;
+    background-color: rgb(228, 200, 255);
+}
+
+#materi-1 .group{
+    display: flex;
+}
+
+#materi-1 .group-vertical{
+    display: flexbox;
+    text-align: center;
+}
+
+#materi-1 .group-vertical p {
+    text-align: left;
+}
+
+#materi-1 .group p {
+    padding: 24px;
+}
+
+#materi-1 .larger-font{
+    font-size: xxx-large;
+}
+
+#materi-1 .center-text{
+    text-align: center;
+}
+
+#materi-2 img {
+    max-width: 400px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#materi-2 .wrapper{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#materi-2 .wrapper .one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#materi-2 .wrapper .two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#materi-2 .wrapper .three {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#materi-2 .wrapper .four {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#materi-2 .wrapper .five {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#materi-2 .wrapper .six {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#materi-2 .wrapper {
+    margin-bottom: 24px;
+}
+
+#materi-2 .wrapper span {
+    font-family: 'Inter';
+    padding: 8px;
+}
+
+#order-list-pompa-ion {
+    padding-left: 56px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#order-list-pompa-ion li{
+    font-family: 'Inter';
+}
+
+#materi-3 .group-flex{
+    display: flex;
+}
+
+#materi-3 img {
+    max-width: 300px;
+    margin: 10px 30px 0 0;
+}
+
+#materi-3 strong{
+    font-family: 'Inter';
+}
+
+.flex-dir-row{
+    flex-direction: row;
+}
+
+.flex-dir-column{
+    flex-direction: column;
+}
+
+#group-nav-arrow {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    left: 240px;
+}
+
+#group-nav-arrow.active{
+    display: flex;
+}
+
+#group-nav-arrow img{
+    opacity: 0.5;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+}
+
+#group-nav-arrow img:hover{
+    opacity: 0.75;
+}
+/* Akhir Style Materi */
+
+/* Style Rangkuman */
+#rangkuman {
+    width: 80%;
+}
+
+#rangkuman h2 {
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+#rangkuman ol {
+    font-family: 'Inter';
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#rangkuman ol ol {
+    text-align: justify;
+}
+
+/* Akhir Style Rangkuman */
+
+.evaluasi {
+    display: flexbox;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.evaluasi a {
+    display: inline-block;
+    text-decoration: none;
+    background: #3D4262;
+    padding: 24px;
+    margin: 24px;
+    color: #fff;
+    border-radius: 50px 50px 50px 10px;
+}
+
+.evaluasi a:hover{
+    background: #636a9b;
+}
